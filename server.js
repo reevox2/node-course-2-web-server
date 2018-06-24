@@ -50,6 +50,13 @@ app.get('/about', (req, res)=>{
 	});
 });
 
+//portfolio page
+app.get('/portfolio', (req,res)=>{
+	res.render('portfolio.hbs', {
+		pageTitle: 'Portfolio Page',
+		welcomeMessage: 'Portfolio stuff here'
+	})
+})
 // /bad - send back json with errorMessage property
 
 app.get('/bad', (req,res)=>{
